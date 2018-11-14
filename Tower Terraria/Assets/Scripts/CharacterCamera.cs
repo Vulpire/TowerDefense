@@ -9,7 +9,7 @@ public class CharacterCamera : MonoBehaviour {
 
     private void Awake()
     {
-        GetComponent<UnityEngine.Camera>().orthographicSize = ((Screen.height) / CameraDistace);
+        GetComponent<UnityEngine.Camera>().orthographicSize = (((Screen.height) / CameraDistace) / 2);
     }
 
     void FixedUpdate () {
