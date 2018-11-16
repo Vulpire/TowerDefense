@@ -8,6 +8,12 @@ public class EnemyBehavior : MonoBehaviour {
     public float speed;
 	
 	void Update () {
+
+        if (health <=0)
+        {
+            Destroy(gameObject);
+        }
+
         transform.Translate(Vector2.left * speed * Time.deltaTime);
 	}
 }

@@ -113,6 +113,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &133035445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1441654894405272, guid: ad146dfb721a4694f88f2889832d02a9,
+    type: 2}
+  m_PrefabInternal: {fileID: 337329255}
+--- !u!114 &133035452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133035445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eccfd0104d7f8a47b8a8457fbd8a784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBtwAttacks: 3
+  Persist: 2
+  damage: 5
+  attackPos: {fileID: 1455703997}
+  attackRangeX: -3.75
+  attackRangeY: 1.75
+  WhatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1001 &337329255
 Prefab:
   m_ObjectHideFlags: 0
@@ -205,6 +230,11 @@ Prefab:
     - target: {fileID: 4230039842610608, guid: a5f432aedd452b049b45930d27383bf0, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 61859924096797386, guid: a5f432aedd452b049b45930d27383bf0,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5f432aedd452b049b45930d27383bf0, type: 2}
@@ -404,6 +434,34 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1455703996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455703997}
+  m_Layer: 10
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1455703997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455703996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1, y: -0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1035897270}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1473604365
